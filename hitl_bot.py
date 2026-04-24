@@ -37,7 +37,7 @@ def purchase_stock(symbol: str, quantity: int) -> dict:
     Before confirming the purchase, this tool will interuppt
     and wait for a human decision ('yes'/ anything else).
     """
-    decision = interrupt(f"Approve buying {quantity} shanres of {symbol}? (yes/no)")
+    decision = interrupt(f"Approve buying {quantity} shares of {symbol}? (yes/no)")
     
     if isinstance(decision, str) and decision.lower() == "yes":
         return {
